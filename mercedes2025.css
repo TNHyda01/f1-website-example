@@ -1,0 +1,382 @@
+
+/* Combined Footer Row */
+.footer-combined {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  background: #232529;
+  border-radius: 0 0 12px 12px;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.footer-combined .footer-title {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-combined .footer-menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.footer-combined .footer-menu li {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.footer-combined .footer-dot {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 2px;
+}
+.footer-combined .footer-time {
+  color: #e6e6e6;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', Arial, sans-serif;
+  background: #00b9b7;
+  color: #fff;
+}
+
+.main-navbar .logo {
+  margin-right: 36px;
+}
+/* Main Navbar Redesign */
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #009e9c;
+  padding: 18px 48px;
+  border-radius: 0 0 6px 6px;
+  min-height: 70px;
+}
+.main-navbar .logo img {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0 32px 0 0;
+  padding: 0;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.nav-menu li {
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #111216;
+  border-radius: 16px;
+  padding: 4px 16px;
+  gap: 8px;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.search-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-close {
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.track-time-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+.track-time-label {
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.track-time-dot {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 2px;
+}
+.track-time-value {
+  color: #e6e6e6;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2px;
+}
+.track-time-clock {
+  height: 32px;
+  width: 32px;
+  margin-left: 6px;
+}
+/* Latest Track Time Dropdown */
+.track-time-menu {
+  position: relative;
+  font-weight: bold;
+}
+.track-time-menu:hover .track-time-dropdown,
+.track-time-menu:focus-within .track-time-dropdown {
+  display: block;
+}
+.track-time-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #191919;
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 320px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.track-time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.my-time-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.my-time-label {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.my-time-value {
+  font-weight: 900;
+  margin-left: 8px;
+}
+.clock-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+}
+.track-time-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  margin-left: 18px;
+}
+.track-time-label {
+  font-weight: 700;
+  color: #ccc;
+}
+.track-time-value {
+  font-weight: 700;
+  color: #fff;
+  margin-left: 12px;
+}
+
+/* Hero Section */
+.hero-section {
+  background: #00b9b7;
+  padding: 50px 0;
+  text-align: center;
+}
+.hero-card {
+  background: #181a1d;
+  border-radius: 40px;
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 32px 0 0 0;
+  box-sizing: border-box;
+  border: 10px solid #fff;
+}
+.hero-title {
+  font-size: 48px;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  margin: 0 0 16px 40px;
+  text-align: left;
+}
+.hero-car {
+  width: 95%;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+.hero-desc {
+  margin: 32px auto 0 auto;
+  max-width: 900px;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Track Section */
+.track-section {
+  background: #009e9c;
+  padding: 50px 0;  
+  text-align: center;
+}
+.track-title {
+  font-size: 44px;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  margin: 0 0 24px 40px;
+  text-align: left;
+  color: #fff;
+}
+.track-title span {
+  font-size: 28px;
+  font-weight: 400;
+  margin-left: 8px;
+}
+.track-card {
+  background: #fff;
+  border-radius: 40px;
+  max-width: 90vw;
+  margin: 40px auto;
+  padding: 32px 0;
+  box-sizing: border-box;
+  box-sizing: 10px solid #009e9c;
+}
+.track-img {
+  width: 80%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Drivers Section */
+.drivers-section {
+  background: #00b9b7;
+  padding: 50px 0;
+}
+.drivers-title {
+  font-size: 44px;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  margin: 0 0 24px 0;
+  text-align: center;
+  color: #fff;
+}
+.drivers-card {
+  background: #181a1d;
+  border-radius: 40px;
+  max-width: 90vw;
+  margin: 0 auto 0 auto;
+  padding: 32px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+.driver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 260px;
+}
+.driver-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 32px;
+  background: #00b9b7;
+}
+.driver-info {
+  margin-top: 16px;
+  text-align: center;
+}
+.driver-name {
+  font-size: 22px;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.driver-stats {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Footer */
+footer {
+  background: #232529;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+footer, footer * {
+  color: #fff !important;
+}
+footer .apps {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer img {
+  height: 40px;
+}

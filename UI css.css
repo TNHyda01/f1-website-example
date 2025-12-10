@@ -1,0 +1,334 @@
+.main-navbar .logo {
+  margin-right: 36px;
+}
+/* Main Navbar Redesign */
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #232529;
+  padding: 18px 48px;
+  border-radius: 0 0 6px 6px;
+  min-height: 70px;
+}
+.main-navbar .logo img {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0 32px 0 0;
+  padding: 0;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.nav-menu li {
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #111216;
+  border-radius: 16px;
+  padding: 4px 16px;
+  gap: 8px;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.search-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-close {
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.track-time-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+.track-time-label {
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.track-time-dot {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 2px;
+}
+.track-time-value {
+  color: #e6e6e6;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2px;
+}
+.track-time-clock {
+  height: 32px;
+  width: 32px;
+  margin-left: 6px;
+}
+/* Latest Track Time Dropdown */
+.track-time-menu {
+  position: relative;
+  font-weight: bold;
+}
+.track-time-menu:hover .track-time-dropdown,
+.track-time-menu:focus-within .track-time-dropdown {
+  display: block;
+}
+.track-time-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #191919;
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 320px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.track-time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.my-time-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.my-time-label {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.my-time-value {
+  font-weight: 900;
+  margin-left: 8px;
+}
+.clock-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+}
+.track-time-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  margin-left: 18px;
+}
+.track-time-label {
+  font-weight: 700;
+  color: #ccc;
+}
+.track-time-value {
+  font-weight: 700;
+  color: #fff;
+  margin-left: 12px;
+}
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 20px 60px;
+}
+nav .logo {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 60px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  height: 20px;    
+  width: auto;     
+  display: block;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+nav .search {
+  background: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Section Titles */
+h2 {
+  font-size: 38px;
+  margin: 40px 20px 20px;
+  font-family: 'Orbitron', monospace, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Stories Grid */
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+.stories .card {
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.stories img {
+  width: 100%;
+  display: block;
+}
+.stories .card p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/* News Grid */
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.news .item {
+  flex: 1 1 220px;
+  max-width: 300px;
+  min-width: 200px;
+  background: #191919;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.news img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 180px;
+}
+.news p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #232529;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+footer, footer * {
+  color: #fff !important;
+}
+footer .apps {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer img {
+  height: 40px;
+}

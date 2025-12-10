@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #1c1d20;
+  color: #fff;
+}
+
+.main-navbar .logo {
+  margin-right: 36px;
+}
+/* Main Navbar Redesign */
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #232529;
+  padding: 18px 48px;
+  border-radius: 0 0 6px 6px;
+  min-height: 70px;
+}
+.main-navbar .logo img {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+.nav-menu {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  margin: 0 32px 0 0;
+  padding: 0;
+  flex: 1 1 auto;
+  justify-content: center;
+}
+.nav-menu li {
+  color: #fff;
+  font-weight: 900;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.dropdown-arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #111216;
+  border-radius: 16px;
+  padding: 4px 16px;
+  gap: 8px;
+}
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 4px 0;
+}
+.search-icon {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-close {
+  font-size: 18px;
+  color: #aaa;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.track-time-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Orbitron', monospace, sans-serif;
+}
+.track-time-label {
+  color: #fff;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.track-time-dot {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 2px;
+}
+.track-time-value {
+  color: #e6e6e6;
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 2px;
+}
+.track-time-clock {
+  height: 32px;
+  width: 32px;
+  margin-left: 6px;
+}
+/* Latest Track Time Dropdown */
+.track-time-menu {
+  position: relative;
+  font-weight: bold;
+}
+.track-time-menu:hover .track-time-dropdown,
+.track-time-menu:focus-within .track-time-dropdown {
+  display: block;
+}
+.track-time-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #191919;
+  border-radius: 12px;
+  padding: 16px 24px;
+  min-width: 320px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+.track-time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.my-time-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+.my-time-label {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.my-time-value {
+  font-weight: 900;
+  margin-left: 8px;
+}
+.clock-img {
+  width: 48px;
+  height: 48px;
+  margin-left: 12px;
+}
+.track-time-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  margin-left: 18px;
+}
+.track-time-label {
+  font-weight: 700;
+  color: #ccc;
+}
+.track-time-value {
+  font-weight: 700;
+  color: #fff;
+  margin-left: 12px;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 40px 0 16px 40px;
+}
+
+/* Standings Card */
+.standings-card {
+  background: #2b2d31;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  padding: 24px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  padding: 12px 24px;
+  text-align: left;
+}
+.standings-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  align-items: center;
+  border-bottom: 2px solid #3a3b3f;
+  font-size: 14px;
+}
+.row {
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 1px solid #3a3b3f;
+}
+.row:last-child {
+  border-bottom: none;
+}
+
+/* Team Standings */
+.team-header {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center them horizontally */
+  gap: 24px;
+  margin: 0 auto 40px auto;
+  width: 92%;
+  max-width: 1100px;
+}
+
+.leader-box {
+  background: #2b2d31;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+}
+.leader-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+.leader-points {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 4px;
+}
+
+/* Footer */
+footer {
+  background: #232529;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Orbitron', Arial, sans-serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+footer, footer * {
+  color: #fff !important;
+}
+footer .apps {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer img {
+  height: 40px;
+}
